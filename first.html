@@ -1,1 +1,55 @@
+<html>
+<head>
+	<title>教会选举计算器</title>
+</head>
+
+<body>
+	<h1>教会选举计算器</h1>
+	<p>
+		<input type="text">
+		票数: <a id="ticket_01">0</a>
+		<button type="button" onclick="increase1()">+1</button>
+		<button type="button" onclick="decrease1()">-1</button>
+	<img src="html5.gif" alt="HTML5 Icon" width="30" height="20">
+		<input type="text">
+		票数: <a id="ticket_02">0</a>
+		<button type="button" onclick="increase()">+1</button>
+		<button type="button" onclick="decrease()">-1</button>
+
+
+
+	</p>
+
+
+	<script type="text/javascript">
+	var sum = 0;
+
+	var clicks = 0;
+	var ticket_01 = 0;
+
+	function increase1() {
+		clicks += 1;
+		document.getElementById("ticket_01").innerHTML = clicks;
+	};
+	function decrease1() {
+		clicks -= 1;
+		document.getElementById("ticket_01").innerHTML = clicks;
+	};
+
+
+	function increase() {
+		clicks += 1;
+		document.getElementById("ticket_02").innerHTML = clicks;
+	};
+
+	function decrease() {
+		clicks -= 1;
+		document.getElementById("ticket_02").innerHTML = clicks;
+	};
+
+
+	</script>
+
+
+</body></html>
 
